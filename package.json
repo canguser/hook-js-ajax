@@ -10,7 +10,7 @@
   "libName": "$hookAjax",
   "_sourceName": "hook.ajax",
   "author": "Cangshi",
-  "license": "",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "yarn run rollup && yarn run rollup:mini && yarn run rollup:esm:es5 && yarn run build:tm",
     "build:tm": "node ./add-monkey-header.js",
@@ -26,6 +26,7 @@
   },
   "files": [
     "dist",
+    "build",
     "docs",
     "types",
     "readme.md",

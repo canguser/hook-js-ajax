@@ -12,8 +12,8 @@ var formatHtml = function(input, output, config) {
 
 // ==UserScript==
 // @name         Hook Ajax
-// @namespace    https://gitee.com/HGJing/everthing-hook/
-// @version      0.1.0
+// @namespace    https://palerock.cn
+// @version      ${config.version}
 // @description  it can hook all ajax
 // @author       Cangshi
 // @include      *

@@ -14,7 +14,7 @@ yarn add @hook-js/ajax
 ```
 
 ## 简单 DEMO
-```
+```javascript
 import {AjaxInterceptor} from '@hook-js/ajax'
 
 const intercept = new AjaxInterceptor()

@@ -20,8 +20,8 @@
     "rollup:mini": "cross-env NODE_ENV=prod rollup -c",
     "rollup:esm": "cross-env NODE_ENV=esm rollup -c",
     "rollup:esm:es5": "cross-env NODE_ENV=esm5 rollup -c",
-    "gen-dts": "npx tsc main/index.ts --declaration --allowJs --emitDeclarationOnly --outDir types",
-    "gen-docs": "jsdoc2md \"main/**/*.js\" > docs/readme.md",
+    "gen-dts": "npx tsc main/index.ts --declaration --emitDeclarationOnly --target ES2019 --moduleResolution node --outDir types",
+    "gen-docs": "typedoc --out docs main/**/*.ts",
     "gen-dts:docs": "yarn run gen-dts && yarn run gen-docs"
   },
   "files": [

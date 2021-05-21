@@ -43,6 +43,9 @@ declare class FunctionInstance extends Function {
     before(params: object): any
 }
 
+/**
+ * Using to intercept ajax request, new Instance to start hook
+ */
 export class AjaxInterceptor {
 
     urlHooks: { [url: string]: AjaxHooks } = {}
@@ -207,6 +210,11 @@ export class AjaxInterceptor {
         this.sendHooks[id] = []
     }
 
+    /**
+     * Register from url RegExp
+     * @param url
+     * @param hooks
+     */
     register(url: string, hooks: AjaxHooks) {
         this.urlHooks[url] = hooks
     }
